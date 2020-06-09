@@ -32,7 +32,15 @@ export const checkBn = value => {
 ```
 
 ```javascript
+// 숫자 포맷 1000단위
 const isNumber = (num) => !Number.isNaN(parseInt(num));
 const numberFormat = (num) => isNumber ? num.toLocaleString() : "";
+
+// array sort
+const arr = [0, 2, 3, 1]
+arr.sort((a, b) => a - b)
+console.log('오름차순', ...arr)
+arr.sort((a, b) => b - a)
+console.log('내름차순', ...arr)
 ```
 
