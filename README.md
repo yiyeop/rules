@@ -30,3 +30,9 @@ export const checkBn = value => {
   return false;
 };
 ```
+
+```javascript
+const isNumber = (num) => !Number.isNaN(parseInt(num));
+const numberFormat = (num) => isNumber ? num.toLocaleString() : "";
+```
+
